@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: Bongkar;
+    src: url(../fonts/Bongkar.ttf);
+}
+
+body {
+    font-family: Inter;
+}
+
+/* =============== VARIABLES ================== */
+
+:root {
+    --color-yellow-bg: #E1C646;
+    --color-yellow-text: #E2C44A;
+    --color-bleue-dark: #314166;
+    --color-light: #9E9E9E;
+
+    --btn-raduis: 20px;
+    --img-radius: 10.64px;
+    --card-banner-radius: 30px;
+
+}
