@@ -128,6 +128,9 @@ nav .nav-icons i {
         input[type="search"]::placeholder{
         font-size: 15px;
     }
+    .banner-text .links {
+        justify-content: center !important;
+    }
 }
 
 
@@ -172,18 +175,28 @@ nav .nav-icons i {
     color: var(--color-bleue-dark);
 }
 
+@media screen and (max-width: 767px) {
+    #products .product-box {
+        height: 254px;
+        width: 270px !important;
+    }
+}
+
 
 /* ============= line 1 ============== */
 
-#line span {font-size: 20px; line-height: 22px;}
-#line img {height: 50px;}
+#line span {font-size: 20px; line-height: 20px;}
+#line img {width: 35%;}
 
 @media screen and (max-width: 991px) {
-    #line img {height: 40px;}
+    #line span {font-size: 18px; line-height: 18px;}
+    #line img {
+        height: 20px;
+    }
 }
 @media screen and (max-width: 767px) {
     #line span {display: none;}
-    #line img {height: 45px;}
+    #line img {width: 100%;}
 }
 
 
@@ -197,4 +210,62 @@ nav .nav-icons i {
 .box h4 {color: var(--color-bleue-dark);}
 .box i{font-size: 80px;}
 
+/* =============== banner footer =============== */
+
+#banner-footer .content {
+    height: 295px;
+    overflow: hidden;
+    background: var(--color-yellow-bg);
+}
+
+.content .bg-foot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content h3 {
+    font-family: 'Bongkar';
+    font-size: 40px;
+}
+.content div img:first-child {
+    margin-right: -58px;
+}
+
+@media screen and (max-width: 991px) {
+    #banner-footer .content {
+        height: 200px;
+    }
+    .content h3 {font-size: 25px;}
+
+    .content div img:first-child {
+        height: 200px;
+        margin-right: -39px;
+    }
+    .content div img:last-child {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #banner-footer .content {
+        text-align: center;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .content h3 {
+        margin: 1rem 0 !important;
+    }
+    .content div img:last-child {
+        margin-left: 10px;
+    }
+    .content .bg-foot {
+        width: auto;
+    }
+}
+
+/* =========== line 2 ================= */
+#line-footer img {
+    height: 30px;
+}
 
