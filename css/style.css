@@ -133,10 +133,6 @@ nav .nav-icons i {
 
 /* ================= products =============== */
 
-#products .products-row {
-    /* gap: 1rem 1.2rem; */
-}
-
 #products .product-box {
     cursor: pointer;
     position: relative;
@@ -176,7 +172,29 @@ nav .nav-icons i {
     color: var(--color-bleue-dark);
 }
 
-@media screen and (max-width: 666px) {
 
+/* ============= line 1 ============== */
+
+#line span {font-size: 20px; line-height: 22px;}
+#line img {height: 50px;}
+
+@media screen and (max-width: 991px) {
+    #line img {height: 40px;}
 }
+@media screen and (max-width: 767px) {
+    #line span {display: none;}
+    #line img {height: 45px;}
+}
+
+
+/* ============= marketing ================ */
+
+#marketing .box {
+    width: 330px;
+}
+
+.box i, 
+.box h4 {color: var(--color-bleue-dark);}
+.box i{font-size: 80px;}
+
 
