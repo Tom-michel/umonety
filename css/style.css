@@ -59,6 +59,7 @@ nav .nav-icons i {
     .nav-search input[type="search"] {max-width: 180px;}
 }
 
+
 /* ============= banner ============== */
 
 #banner {
@@ -130,5 +131,52 @@ nav .nav-icons i {
 }
 
 
+/* ================= products =============== */
 
+#products .products-row {
+    /* gap: 1rem 1.2rem; */
+}
+
+#products .product-box {
+    cursor: pointer;
+    position: relative;
+    height: 254px;
+    width: 251px !important;
+    overflow: hidden;
+}
+
+.product-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 3s;
+}
+.product-box:hover img{
+    transform: scale(1.2);
+    transition: 3s;
+}
+.product-box .info {
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+.product-box .info h3{font-size: 13px; line-height: 16px;}
+.product-box .info p{font-size: 11px;}
+.product-box .info p i{color: var(--color-yellow-text); font-size: 9px;}
+.product-box .info h4{font-size: 13px;}
+
+.product-box .more {
+    z-index: 9;
+    right: 10px;
+    bottom: 10px;
+    background: var(--color-yellow-bg);
+}
+.product-box .more i {
+    color: var(--color-bleue-dark);
+}
+
+@media screen and (max-width: 666px) {
+
+}
 
