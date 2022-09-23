@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- top nav -->
     <div class="top-nav d-flex align-items-center justify-content-center position-relative py-1">
         <span class="container fw-semibold text-white text-center">
             📦Commandez avant 12 h pour une réception garantie dès le lendemain.
         </span>
     </div>
-    <nav class="navbar bg-light position-absolute">
+
+    <!-- navbar -->
+    <nav class="navbar bg-white position-absolute">
         <div class="container-fluid container-md myContainer">
             <!-- brand -->
             <a href="#" class="navbar-brand d-flex align-items-center">
@@ -46,6 +49,37 @@
             </div>
         </div>
     </nav>
+
+    <!-- banner -->
+    <section id="banner" class="img-fluid bg-secondary" style="background-attachment: fixed; background-repeat:no-repeat; background-size: cover;">
+        <div class="banner-content d-flex align-items-center justify-content-center">
+            <!-- banner img -->
+            <img src="img/banner.png" alt="banner-img">
+            
+            <!-- banner text -->
+            <div class="banner-text container text-white text-center">
+                <div class="col-lg-8 offset-lg-2 col-md-12 tex">
+                    <!-- slogan -->
+                    <h1 class="fw-bold text-uppercase mb-2">Absolument tout ce qui est frais est sur <span>umonety.fr</span></h1>
+                    <h6 class="fw-bold text-uppercase">-50% sur votre première commande avec le code gourmand </h6>
+                    
+                    <!-- map input -->
+                    <form class="banner-search mt-4 mb-3 d-flex align-items-center gap-1 bg-white rounded-4 py-1 py-sm-1 py-md-2 px-3">
+                        <label for="map-btn"><i class="uil uil-map-marker"></i></label>
+                        <input class="border-0" type="search" placeholder="Votre point de livraison">
+                        <input type="submit" id="map-btn" value="Valider" hidden>
+                    </form>
+                
+                    <!-- links -->
+                    <div class="d-flex flex-wrap align-items-center justify-content-between text-center gap-2">
+                        <a class="text-decoration-none text-white" href="#">Choisir un point de retrait ></a>
+                        <a class="text-decoration-none text-white" href="#">Indiquer mon adresse plus tard ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
