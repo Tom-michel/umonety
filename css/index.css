@@ -1,65 +1,3 @@
-
-/* ================= top nav =================== */
-
-.top-nav {
-    width: 100vw;
-    background: var(--color-yellow-bg);
-    z-index: 9;
-}
-.top-nav span {font-size: 20px;}
-
-
-/* ================= navbar ================ */
-
-nav {
-    width: 100vw;
-    height: 85px;
-    z-index: 2;
-}
-
-nav .navbar-brand >div span:first-child{
-    bottom: -14px;
-    line-height: 10px;
-    font-size: 28.7834px;
-    letter-spacing: 0.03em;
-    color: var(--color-yellow-text);
-}
-nav .navbar-brand >div span:last-child{
-    top: -5px;
-    font-size: 9.80428px;
-    letter-spacing: 0.03em;
-}
-
-
-.nav-search label {color: var(--color-light);}
-.nav-search input[type="search"] {
-    border: none !important;
-    max-width: 222px;
-}
-.nav-search input[type="search"]::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12.6106px;
-    line-height: 15px;
-}
-.nav-search input[type="search"]:focus {border: none !important;}
-
-nav .nav-icons i {
-    font-size: 22px;
-    color: var(--color-light);
-}
-
-@media screen and (max-width: 666px) {
-    .top-nav span {font-size: 15px;}
-    nav { height: 135px;}
-    nav .myContainer {justify-content: center !important;}
-    nav .navbar-brand {margin-bottom: 5px;}
-    nav .navbar-brand >div span:first-child{font-size: 25px;}
-    nav .navbar-brand >div span:last-child{font-size: 8px;}
-    .nav-search input[type="search"] {max-width: 180px;}
-}
-
-
 /* ============= banner ============== */
 
 #banner {
@@ -137,21 +75,21 @@ nav .nav-icons i {
 /* ================= products =============== */
 
 #products .product-box {
-    cursor: pointer;
     position: relative;
     height: 254px;
     width: 251px !important;
     overflow: hidden;
 }
 
-.product-box img {
+.product-box .product-img {
+    cursor: pointer;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 3s;
 }
-.product-box:hover img{
+.product-box:hover .product-img{
     transform: scale(1.2);
     transition: 3s;
 }
@@ -160,7 +98,7 @@ nav .nav-icons i {
     z-index: 1;
     background: rgba(0, 0, 0, 0.5);
 }
-.product-box .info h3{font-size: 13px; line-height: 16px;}
+.product-box .info .product-name{font-size: 13px; line-height: 16px;}
 .product-box .info p{font-size: 11px;}
 .product-box .info p i{color: var(--color-yellow-text); font-size: 9px;}
 .product-box .info h4{font-size: 13px;}

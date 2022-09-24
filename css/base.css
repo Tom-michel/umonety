@@ -23,3 +23,65 @@ body {
     --card-banner-radius: 30px;
 
 }
+
+
+/* ================= top nav =================== */
+
+.top-nav {
+    width: 100vw;
+    background: var(--color-yellow-bg);
+    z-index: 9;
+}
+.top-nav span {font-size: 20px;}
+
+
+/* ================= navbar ================ */
+
+nav {
+    width: 100vw;
+    height: 85px;
+    z-index: 2;
+}
+
+nav .navbar-brand >div span:first-child{
+    bottom: -14px;
+    line-height: 10px;
+    font-size: 28.7834px;
+    letter-spacing: 0.03em;
+    color: var(--color-yellow-text);
+}
+nav .navbar-brand >div span:last-child{
+    top: -5px;
+    font-size: 9.80428px;
+    letter-spacing: 0.03em;
+}
+
+
+.nav-search label {color: var(--color-light);}
+.nav-search input[type="search"] {
+    border: none !important;
+    max-width: 222px;
+}
+.nav-search input[type="search"]::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.6106px;
+    line-height: 15px;
+}
+.nav-search input[type="search"]:focus {border: none !important;}
+
+nav .nav-icons i {
+    font-size: 22px;
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 666px) {
+    .top-nav span {font-size: 15px;}
+    nav { height: 135px;}
+    nav .myContainer {justify-content: center !important;}
+    nav .navbar-brand {margin-bottom: 5px;}
+    nav .navbar-brand >div span:first-child{font-size: 25px;}
+    nav .navbar-brand >div span:last-child{font-size: 8px;}
+    .nav-search input[type="search"] {max-width: 180px;}
+}
+

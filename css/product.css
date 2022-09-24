@@ -1,0 +1,26 @@
+/* =============== product details =================== */
+
+#product-details .prod-title {
+    font-size: 50px;
+}
+
+.price h1 {
+    font-size: 67px;
+}
+.price h6 {
+    font-size: 18px;
+}
+.prod-star i {
+    color: var(--color-bleue-dark);
+}
+.prod-desc {
+    font-size: 15px;
+}
+.quantity input {
+    width:50px !important;
+}
+
+#product-details .btn-add {
+    background: var(--color-bleue-dark);
+}
+
