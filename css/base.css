@@ -24,6 +24,11 @@ body {
 
 }
 
+/* ==================== couleurs ================ */
+
+.text-bleu {color: var(--color-bleue-dark) !important;}
+.text-jaune {color: var(--color-yellow-text) !important;}
+
 
 /* ================= top nav =================== */
 
