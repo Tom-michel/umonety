@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Panier | Umonety</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+        <!-- fontawesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+        <!-- iconscout -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/cart.css">
+    </head>
+    <body class="bg-light">
+        <!-- top nav -->
+        <div class="top-nav d-flex align-items-center justify-content-center position-relative py-1">
+            <span class="container fw-semibold text-white text-center">
+                📦Commandez avant 12 h pour une réception garantie dès le lendemain.
+            </span>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar bg-white position-absolute">
+            <div class="container-fluid container-md myContainer">
+                <!-- brand -->
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/nav-logo.png" alt="logo">
+                    <div>
+                        <span class="text-uppercase fw-bold position-relative">Umonety</span><br>
+                        <span class="text-uppercase text-dark fw-light position-relative">The quality of being human</span>
+                    </div>
+                </a>
+
+                <!-- left side of navbar -->
+                <div class="d-flex align-items-center gap-4 gap-sm-3 gap-md-5">
+                    <form class="nav-search d-flex align-items-center gap-1 bg-white border rounded-pill py-1 py-sm-1 py-md-2 px-3" role="search">
+                        <label for="search-btn"><i class="uil uil-search"></i></label>
+                        <input class="border-0" type="search" placeholder="Recherche" aria-label="Search">
+                        <input type="submit" id="search-btn" value="Valider" hidden>
+                    </form>
+                    <div class="nav-icons">
+                        <a href="#"><i class="uil uil-building"></i></a>
+                        <a href="#"><i class="uil uil-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner footer -->
+        <section>
+            <div class="container mt-5 pt-5">
+                <div id="banner-footer" class="row mt-5">
+                    <div class="col-lg-6 my-2">
+                        <div class="content content-g d-flex align-items-center justify-content-between 
+                            border rounded-4 px-3 position-relative">
+                            <img class="bg-foot" src="img/prod-banner-foot-bg.png" alt="">
+                            <div class="img-bg d-lg-flex d-none flex-column justify-content-between align-items-center position-absolute">
+                                <img src="img/prod-banner-foot-bg-top.png" alt="">
+                                <img src="img/prod-banner-foot-bg-bottom.png" alt="">
+                            </div>
+                            <div class="ms-lg-0 ms-md-5">
+                                <h3 class="text-white mb-2">Livraison 7j/7 en 1h</h3>
+                                <h6 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus eget in nunc.</h6>
+                            </div>
+                            <div class="img position-relative">
+                                <img class="position-relative me-lg-0 me-sm-0 me-4" src="img/prod-banner-foot-img1.png" alt="img2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-2">
+                        <div class="content content-d d-flex align-items-center justify-content-between 
+                            border rounded-4 px-3 position-relative">
+                            <img class="bg-foot" src="img/prod-banner-foot-bg.png" alt="">
+                            <div class="img-bg d-lg-flex d-none flex-column justify-content-between align-items-center position-absolute">
+                                <img src="img/prod-banner-foot-bg-top.png" alt="">
+                                <img src="img/prod-banner-foot-bg-bottom.png" alt="">
+                            </div>
+                            <div class="ms-lg-0 ms-md-5">
+                                <h3 class="text-white mb-2">Decouvrez nos produits du terroir</h3>
+                                <h6 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus eget in nunc.</h6>
+                            </div>
+                            <div class="img img2 position-relative">
+                                <img class="position-relative me-lg-0 me-sm-0 me-4" src="img/prod-banner-foot-img2.png" alt="img2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-3 pb-3" id="bg">
+
+            <!-- cart -->
+            <section id="cart">
+                <div class="cart container">
+                    <h6 class="py-3">VOTRE PANIER (2 ARTICLES)</h6>
+                    <div class="row bg-white">
+                        <div class="col-md-8">
+
+                            <!-- line 1 -->
+                            <div class="card-line my-3 d-flex flex-wrap align-items-center gap-md-5 gap-2">
+                                <div class="img-prod rounded-4">
+                                    <img src="img/cart-img-1.png" alt="img-prod">
+                                </div>
+                                <div class="line-text d-flex flex-wrap gap-3 align-items-start justify-content-between">
+                                    <div class="text">
+                                        <h6>Rhoncus etiam.</h6>
+                                        <div class="text-muted">40, 00<i class="uil uil-euro"></i></div>
+                                        <h5>37,50<i class="uil uil-euro"></i></h5>
+                                        <div class="text-muted">Etiam elementum id suspendisse.</div>
+                                    </div>
+                                    <div class="line-quantity d-flex align-items-start gap-2">
+                                        <input style="width: 50px;" type="number" name="" id="" value="2">
+                                        <h5>75, 00<i class="uil uil-euro"></i></h5>
+                                        <a href="#"><i class="uil uil-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- line 2 -->
+                            <div class="card-line my-3 d-flex flex-wrap align-items-center gap-md-5 gap-2">
+                                <div class="img-prod rounded-4">
+                                    <img src="img/cart-img-2.png" alt="img-prod">
+                                </div>
+                                <div class="line-text d-flex flex-wrap gap-3 align-items-start justify-content-between">
+                                    <div class="text">
+                                        <h6>Nibh praesent nibh odio dapibus.</h6>
+                                        <div class="text-muted">50, 00<i class="uil uil-euro"></i></div>
+                                        <h5>47,00<i class="uil uil-euro"></i></h5>
+                                        <div class="text-muted">Amet risus ut tortor nam nunc arcu quis. </div>
+                                    </div>
+                                    <div class="line-quantity d-flex align-items-start gap-2">
+                                        <input style="width: 50px;" type="number" name="" id="" value="2">
+                                        <h5>47, 00<i class="uil uil-euro"></i></h5>
+                                        <a href="#"><i class="uil uil-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col-md-4 bg-light p-3">
+                            <p>Code promo</p>
+                            <p>France</p>
+                            <input class="rounded-2 border form-control" type="text">
+                            <p class="text-muted">35% de réduction</p>
+                            <p>Total</p>
+                            <h5>84.5<i class="uil uil-euro"></i></h5>
+                            <small class="text-muted">90,00<i class="uil uil-euro"></i></small>
+                        </div>
+                        <div class="col-md-8">
+                            <button style="width: 100%; background: var(--color-bleue-dark);" class="btn-add my-4 text-uppercase rounded-4 border-0 text-white py-2 px-4 mb-3">
+                                VALIDER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- form -->
+            <div class="container my-5 bg-white px-4 py-5">
+                <h6 class="mb-5">Adresse de facturation</h6>
+                <form method="post" class="cart-form">
+                    <div class="row">
+                        <!-- noms et prenoms -->
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <label for="noms" class="form-label">Nom et prénom</label>
+                                <input type="text" class="form-control border-0 border-bottom shadow-none rounded-0" id="noms" 
+                                    placeholder="Ex : Rasyidin Arsyad Nasution">
+                            </div>                    
+                        </div>
+                        <!-- email -->
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <label for="email" class="form-label">Adresse e-mail</label>
+                                <input type="email" class="form-control border-0 border-bottom shadow-none rounded-0" id="email" 
+                                    placeholder="Ex: rasyid.arsyad@gmail.com">
+                            </div> 
+                        </div>
+                        <!-- telephone -->
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <label for="telephone" class="form-label">Numéro de téléphone</label>
+                                <input type="tel" class="form-control border-0 border-bottom shadow-none rounded-0" id="telephone" 
+                                    placeholder="Ex: 089111888999">
+                            </div> 
+                        </div>
+                        <!-- adresse de livraison -->
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <label for="adresse" class="form-label">Adresse de livraison</label>
+                                <input type="text" class="form-control border-0 border-bottom shadow-none rounded-0" id="adresse" 
+                                    placeholder="Ex : Patriot Street Number 666, Clicking, Sleman">
+                            </div> 
+                        </div>
+                        <!-- pays -->
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <label for="pays" class="form-label">Pays</label>
+                                <input type="text" class="form-control border-0 border-bottom shadow-none rounded-0" id="pays" 
+                                    placeholder="États-Unis d'Amérique (États-Unis)">
+                            </div> 
+                        </div>
+                        <!-- etat/province -->
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <label for="province" class="form-label">État/Province</label>
+                                <input type="text" class="form-control border-0 border-bottom shadow-none rounded-0" id="province" 
+                                    placeholder="Californie">
+                            </div> 
+                        </div>
+                        <!-- ville -->
+                        <div class="col-md-4">
+                            <div class="mb-5">
+                                <label for="ville" class="form-label">Ville</label>
+                                <select class="form-select border-0 border-bottom shadow-none rounded-0" name="ville">
+                                    <option value="">San Francisco</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <!-- code postal -->
+                        <div class="col-md-4">
+                            <div class="mb-5">
+                                <label for="postal" class="form-label">Code postal</label>
+                                <input type="number" class="form-control border-0 border-bottom shadow-none rounded-0" id="telephone" 
+                                    placeholder="Ex: 94024">
+                            </div> 
+                        </div>
+                        <!-- adresse de courrier -->
+                        <div class="col-md-4">
+                            <div class="mb-5">
+                                <label for="courrier" class="form-label">Choisissez Courrier</label>
+                                <select class="form-select border-0 border-bottom shadow-none rounded-0" name="courrier">
+                                    <option value="">DHL</option>
+                                </select>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 justify-content-end mt-3">
+                        <button class="border border-primary bg-white py-1 px-4 rounded-3 fw-semibold">
+                            Continuer vos achats
+                        </button>
+                        <input class="submit border py-1 px-4 rounded-3 text-white fw-semibold" type="submit" value="Passer ma commande">
+                    </div>
+                </form>
+            </div>
+        
+        </section>
+
+        <!-- line 2 -->
+        <section style="max-width: 100vw; overflow: hidden !important;" id="line-footer" class="mb-5 pt-5 pb-3">
+            <img src="img/line.png" alt="">
+        </section>
+
+        <!-- footer -->
+        <footer class="text-center text-lg-start">
+            
+            <div class="container p-4 pb-0">
+                <!-- footer logo -->
+                <div class="text-center mb-4">
+                    <img src="img/footer-logo.png" alt="footer-logo">
+                </div>
+
+                <!-- liens rapides -->
+                <section class=""> 
+                    <div class="row">
+                        <!-- Contacts -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-capitalize mb-4 fs-6 fw-bold">Contact</h6>
+                            <p><i class="uil uil-phone"></i> +33 2342243243</p>
+                            <p><i class="uil uil-map-pin-alt"></i> 112 Rue Montaigne 75015 Paris</p>
+                            <p><i class="uil uil-envelope-alt"></i></i> contact@monety.fr</p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- informations -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-capitalize mb-4 fs-6 fw-bold">
+                                Informations
+                            </h6>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">Politique de confidentialité</a>
+                            </p>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">Paiement sécurisé</a>
+                            </p>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">Conditions de livraison</a>
+                            </p>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">CGV</a>
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Produits -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-capitalize mb-4 fs-6 fw-bold">Produits</h6>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">Promotions</a>
+                            </p>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">Nouveaux produits</a>
+                            </p>
+                            <p>
+                                <a href="" class="text-capitalize text-decoration-none text-dark">Meilleures ventes</a>
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Follow us -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-capitalize mb-4 fs-6 fw-bold">Suivez-nous</h6>
+
+                            <!-- Facebook -->
+                            <a href="" class="btn borser-0 btn-dark btn-floating m-1 rounded-circle" href="#!">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+
+                            <!-- insta -->
+                            <a href="" class="btn borser-0 btn-dark btn-floating m-1 rounded-circle" href="#!">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a href="" class="btn borser-0 btn-dark btn-floating m-1 rounded-circle" href="#!">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+
+                            <!-- yotube -->
+                            <a href="" class="btn borser-0 btn-dark btn-floating m-1 rounded-circle" href="#!">
+                                <i class="uil uil-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </footer>
+        
+    </body>
+</html>

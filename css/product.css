@@ -121,7 +121,7 @@
 }
 .content h3 {
     font-family: 'Bongkar';
-    color: var(--color-yellow-text);
+    color: var(--color-yellow-text) !important;
     font-size: 25px;
 }
 .content h6 {

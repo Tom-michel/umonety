@@ -1,0 +1,124 @@
+/* =============== banner footer =============== */
+
+#banner-footer .content {
+    height: 233px;
+    overflow: hidden;
+}
+#banner-footer .content.content-g{
+    background: #1E1E1E;
+}
+#banner-footer .content.content-d{
+    background: #344469;
+}
+
+.content .bg-foot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content h3 {
+    font-family: 'Bongkar';
+    color: var(--color-yellow-text) !important;
+    font-size: 25px;
+}
+.content h6 {
+    font-size: 14px;
+}
+.content .img.img2 img {
+    width: 280px;
+}
+.content .img-bg {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .content .img.img2 img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 991px) 
+and (min-width: 768px) {
+    #banner-footer .content {
+        height: 200px;
+    }
+    .content h3 {font-size: 25px;}
+
+    .content div img:first-child {
+        height: 200px;
+        margin-right: -39px;
+    }
+    .content div img:last-child {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #banner-footer .content {
+        text-align: center;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .content h3 {
+        margin: 1rem 0 !important;
+    }
+    .content div img:last-child {
+        margin-left: 10px;
+    }
+    .content .bg-foot {
+        width: auto;
+    }
+}
+
+
+/* ============= background =========== */
+
+#bg {
+    background-image: url(../img/cart-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* =================== cart list =============== */
+
+
+#cart .img-prod {
+    position: relative;
+    width: 130px;
+    height: 128px;
+    overflow: hidden;
+}
+#cart .img-prod img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ============== form =========== */
+
+.cart-form input[type="text"]:focus, 
+.cart-form input[type="email"]:focus, 
+.cart-form input[type="tel"]:focus, 
+.cart-form input[type="number"]:focus, 
+.cart-form select:focus
+{
+    border-bottom: var(--color-bleue-dark) 1px solid !important;
+}
+
+.cart-form label {
+    font-size: 15px;
+}
+.cart-form input[type="submit"] {
+    background: var(--color-bleue-dark);
+}
+
+/* =========== line 2 ================= */
+#line-footer img {
+    height: 30px;
+}
+
