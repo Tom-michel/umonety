@@ -1,9 +1,9 @@
 # umonety
 ![alt text](capture-umonety.png)
 
-Implémentation d'un design réalisé par avec Figma.
+Implémentation d'un design réalisé avec Figma.
 
-Tchenologies :
+Technologies front-end :
 - Bootstrap
 - HTML5
 - CSS3
